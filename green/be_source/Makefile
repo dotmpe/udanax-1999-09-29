@@ -1,6 +1,8 @@
 CC = cc                         # select gcc if you like
 
-CFLAGS = -pg -ggdb -Wall
+CFLAGS = -pg -ggdb -Wall \
+-Wno-implicit -Wno-return-mismatch -Wno-incompatible-pointer-types \
+-fcommon
 #CFLAGS = -w
 # CFLAGS = -cckr                # use this line for Irix
 
